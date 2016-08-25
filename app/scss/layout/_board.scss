@@ -1,0 +1,11 @@
+.board-layout{
+  display: block;
+  @include size($board-width, $board-height);
+  background: $board-background;
+  $params:(
+    'position':relative,
+    'top': 50px,
+  );
+  @include positioning($params...);
+  margin: auto;
+}

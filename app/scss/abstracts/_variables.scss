@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-color: #000000;
+
+// body vars
+$body-background: rgb(0, 167, 228);
+
+// bottons vars
+$buttons-container-width: 300px;
+$buttons-container-height: 50px;
+$buttons-width:40%;
+$buttons-height:80%;
+
+// board vars
+$board-width: 500px;
+$board-height: 800px;
+$board-background: rgb(193, 193, 193);
+
+// block vars
+$block-width: 49px;
+$block-height: 51px;
+$block-background-1: rgb(190, 0, 0);
+$block-background-2: rgb(190, 207, 0);
+$block-background-3: rgb(44, 190, 0);
+$block-background-4: rgb(0, 30, 190);
+$block-background-5: rgb(190, 0, 154);
+
+// score vars
+$score-container-width: 400px;
+$score-container-height: 50px;
+$score-elements-width:40%;
+$score-elements-height:80%;
+$score-background: rgb(0, 167, 228);
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;

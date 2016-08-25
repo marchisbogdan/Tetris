@@ -1,0 +1,11 @@
+/*
+  This container wraps the buttons for starting and stoping the game
+*/
+.buttons {
+  display: flex;
+  @include size($buttons-container-width,$buttons-container-height);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

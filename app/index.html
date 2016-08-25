@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Tetris</title>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = "./js/script.js";
+				document.head.appendChild(script);
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<div class="buttons">
+			<button id='start' name="Start">Start!</button>
+			<button id="stop" name="Stop">Stop!</button>
+		</div>
+		<div class="board-layout">
+			<table>
+				<tr class="rows no1">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no2">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no3">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no4">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no5">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no6">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no7">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no8">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no9">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no10">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no11">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no12">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no14">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no15">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+				<tr class="rows no16">
+					<td class="colls coll-1">
+
+					</td>
+					<td class="colls coll-2">
+
+					</td>
+					<td class="colls coll-3">
+
+					</td>
+					<td class="colls coll-4">
+
+					</td>
+					<td class="colls coll-5">
+
+					</td>
+					<td class="colls coll-6">
+
+					</td>
+					<td class="colls coll-7">
+
+					</td>
+					<td class="colls coll-8">
+
+					</td>
+					<td class="colls coll-9">
+
+					</td>
+					<td class="colls coll-10">
+
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="score">
+			<div class="score__current">
+				
+			</div>
+			<div class="score__best">
+
+			</div>
+		</div>
+	</body>
+
+</html>

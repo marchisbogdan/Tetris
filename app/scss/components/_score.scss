@@ -1,0 +1,5 @@
+
+.score__current, .score__best{
+  display: block;
+  @include size($score-elements-width,$score-elements-height);
+}

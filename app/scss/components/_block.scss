@@ -1,0 +1,13 @@
+%tetris-block {
+	display: block;
+	@include size($block-width, $block-height);
+	@include positioning('absolute');
+}
+
+.active-block {
+	@extend %tetris-block;
+}
+
+.positioned-block {
+	@extend %tetris-block;
+}

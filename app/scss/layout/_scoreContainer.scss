@@ -1,0 +1,17 @@
+/*
+  This container wraps the score elements
+*/
+.score{
+  display:flex;
+  background: $score-background;
+  @include size($score-container-width,$score-container-height);
+  $params:(
+    'position':relative,
+    'top': 51px,
+  );
+  @include positioning($params...);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
